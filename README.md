@@ -33,9 +33,13 @@ pip install scikit-learn
 ## <a name="Examples"></a>Examples 📢
 
 [Ejemplo SQL](https://github.com/JulioUrjc/MarchingLearning/ejemploSQL.py)
+
 [Ejemplo Graficos](https://github.com/JulioUrjc/MarchingLearning/ejemploGraficos.py)
+
 [Ejemplo Matplotlib](https://github.com/JulioUrjc/MarchingLearning/ejemplomatplotlib.py)
+
 [Ejemplo SeaBorn](https://github.com/JulioUrjc/MarchingLearning/ejemploSeaBorn.py)
+
 [Ejemplo Plotly](https://github.com/JulioUrjc/MarchingLearning/ejemplosPlotly.py)
 
 ### <a name="Author">Author ✒️
