@@ -11,7 +11,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn import metrics
 
 #www.kaggle.com
-casas = pd.read_csv('E:/personal/Repos/MarchingLearning/USA_Housing.csv')
+casas = pd.read_csv('./resources/USA_Housing.csv')
 
 casas.head()
 #casas.info()
