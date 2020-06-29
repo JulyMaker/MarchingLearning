@@ -27,6 +27,7 @@ pip install seaborn
 pip install plotly
 pip install cufflinks
 pip install scikit-learn
+pip3 install --uprgrade tensorflow
 ```
 
 
