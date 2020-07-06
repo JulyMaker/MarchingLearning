@@ -28,11 +28,11 @@ print(movies_df.head())
 
 #Utilizando expresiones regulares para encontrar un año guardado entre paréntesis
 #Especificamos los paréntesis para no tener conflicto con las películas que tienen años como parte de su título
-movies_df['year'] = movies_df.title.str.extract('(\(\d\d\d\d\))',expand=False)
+movies_df['year'] = movies_df.title.str.extract(r'(\(\d\d\d\d\))',expand=False)
 #Eliminando los paréntesis
-movies_df['year'] = movies_df.year.str.extract('(\d\d\d\d)',expand=False)
+movies_df['year'] = movies_df.year.str.extract(r'(\d\d\d\d)',expand=False)
 #Eliminando los años de la columna 'title'
-movies_df['title'] = movies_df.title.str.replace('(\(\d\d\d\d\))', '')
+movies_df['title'] = movies_df.title.str.replace(r'(\(\d\d\d\d\))', '')
 #Aplicando la función strip para eliminar los caracteres blancos finales
 movies_df['title'] = movies_df['title'].apply(lambda x: x.strip())
 print(movies_df.head())
