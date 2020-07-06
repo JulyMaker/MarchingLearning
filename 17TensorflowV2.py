@@ -33,4 +33,4 @@ def predict(Pclass=1, Sex='female', Age=60 ,Fare=0, Embarked='C'):
   my_X = preprocesador.transform(my_X)
   return model.predict_classes(my_X)
 
-  predict()
+predict()
