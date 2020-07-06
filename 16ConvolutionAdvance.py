@@ -48,22 +48,22 @@ model.fit_generator(
 )
 
 #Predecir
-from google.colab.files import upload #Colab
-import numpy as np
-#upload()
-from tensorflow.keras.preprocessing import image
-imagen = image.load_img('./resources/p.jpg', target_size=(64,64))
-imagen = image.img_to_array(imagen)
-imagen = np.expand_dims(imagen, axis=0) #(64, 64, 3) -> (1, 64, 64, 3) 
-res = model.predict_classes(imagen)
-print('Resultado: ', res)
-print('Etiquetas: ',training_set.class_indices)
-
-#Guardar y cargar modelo
-from google.colab import drive
-drive.mount('/content/gdrive')
-os.mkdir('/content/gdrive/My Drive/Deep Models/Dog Vs Cat')
-model.save('/content/gdrive/My Drive/Deep Models/Dog Vs Cat/DogVSCatModel.h5')
-
-from tensorflow.keras.models import load_model
-model = load_model('/content/gdrive/My Drive/Deep Models/Dog Vs Cat/DogVSCatModel.h5')
+#from google.colab.files import upload #Colab
+#import numpy as np
+##upload()
+#from tensorflow.keras.preprocessing import image
+#imagen = image.load_img('./resources/p.jpg', target_size=(64,64))
+#imagen = image.img_to_array(imagen)
+#imagen = np.expand_dims(imagen, axis=0) #(64, 64, 3) -> (1, 64, 64, 3) 
+#res = model.predict_classes(imagen)
+#print('Resultado: ', res)
+#print('Etiquetas: ',training_set.class_indices)
+#
+##Guardar y cargar modelo
+#from google.colab import drive
+#drive.mount('/content/gdrive')
+#os.mkdir('/content/gdrive/My Drive/Deep Models/Dog Vs Cat')
+#model.save('/content/gdrive/My Drive/Deep Models/Dog Vs Cat/DogVSCatModel.h5')
+#
+#from tensorflow.keras.models import load_model
+#model = load_model('/content/gdrive/My Drive/Deep Models/Dog Vs Cat/DogVSCatModel.h5')
