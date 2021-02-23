@@ -3,6 +3,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+image recognition/Exercise Files/Ch06/credentials.json
 # C extensions
 *.so
 
